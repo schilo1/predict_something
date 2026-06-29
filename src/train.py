@@ -26,7 +26,7 @@ print(f"Accuracy: {accuracy:.4f}")
 joblib.dump(model, 'models/random_forest_model.pkl')
 
 with open('models/metrics.txt', 'w') as f:
-    f.write(f"Accurac: {accuracy:.4f}\n")
+    f.write(f"Accuracy: {accuracy:.4f}\n")
     f.write("Classification Report:\n")
     f.write(classification_report(y_test, predictions))
     f.write("\nConfusion Matrix:\n")
